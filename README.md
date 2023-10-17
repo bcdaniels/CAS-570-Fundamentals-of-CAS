@@ -1,7 +1,7 @@
 # CAS-570-Fundamentals-of-CAS
 Sample notebooks and tutorials for students of CAS 570 at Arizona State University.
 
-Contributors: Enrico Borriello, Bryan Daniels
+Contributors: Enrico Borriello, Bryan Daniels, C. Michael Barton
 
 ### Setting up this git repository
 The _simplest_ way to access the code in this repository is to download a zip file containing all its files by clicking 
