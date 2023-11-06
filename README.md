@@ -1,7 +1,15 @@
 # CAS-570-Fundamentals-of-CAS
 Sample notebooks and tutorials for students of CAS 570 at Arizona State University.
 
-Contributors: Enrico Borriello, Bryan Daniels
+Contributors: Enrico Borriello, Bryan Daniels, C. Michael Barton
+
+### What you'll find here
+
+* CoarseGraining-570.ipynb — A simple agent based model in python
+* Systems of ODEs with SciPy.ipynb — How to simulate ordinary differential equations in python
+* neural-decisions.ipynb — Example of stochastic differential equations used to model neural decisions in python
+* swidden_farming_v2.nlogo — Example agent based model for swidden farming in NetLogo
+* swidden_farming_ODD.pdf — Standardized model description for the swidden farming example
 
 ### Setting up this git repository
 The _simplest_ way to access the code in this repository is to download a zip file containing all its files by clicking 
