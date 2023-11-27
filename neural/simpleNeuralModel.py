@@ -49,21 +49,6 @@ def simpleNeuralDynamics(weightMatrix,inputConst=0,noiseVar=1,
     # set up the simulation times and a list to hold the simulated steps
     times = np.arange(0,tFinal+deltat,deltat)
     stateList = [initialState,]
-    
-    # run the simulation (we already have the state for t=0)
-    for time in times[1:]:
-        currentState = stateList[-1]
-        
-        # compute deltax for current timestep
-        deterministicPart = deltat*( inputConst - currentState + np.dot(weightMatrix,np.tanh(currentState)) )
-        stochasticPart = np.sqrt(deltat*noiseVar)*np.random.normal(size=N)
-        deltax = deterministicPart + stochasticPart
-        
-        # update to find the new state
-        newState = currentState + deltax
-        
-        # record the new state
-        stateList.append(newState)
        
     # return simulation output as a pandas dataframe
     df = pd.DataFrame(stateList,index=times,columns=['Neuron {}'.format(i) for i in range(N)])
