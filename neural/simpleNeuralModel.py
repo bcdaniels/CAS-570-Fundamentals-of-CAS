@@ -15,6 +15,10 @@ import numpy as np
 import scipy.optimize as opt
 import pandas as pd
 
+def check_weight_matrix(weightMatrix):
+    N = len(weightMatrix)
+    assert(len(weightMatrix[0])==N)
+
 def simpleNeuralDynamics(weightMatrix,inputConst=0,noiseVar=1,
     tFinal=10,deltat=1e-3,initialState=None):
     """
@@ -34,7 +38,7 @@ def simpleNeuralDynamics(weightMatrix,inputConst=0,noiseVar=1,
     """
     N = len(weightMatrix)
     # make sure the weight matrix is square
-    assert(len(weightMatrix[0])==N)
+    check_weight_matrix(weightMatrix)
     
     # set up the initial state
     if initialState is None:
