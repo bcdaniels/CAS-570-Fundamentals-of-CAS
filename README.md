@@ -8,6 +8,7 @@ Contributors: Enrico Borriello, Bryan Daniels, C. Michael Barton
 * CoarseGraining-570.ipynb — A simple agent based model in python
 * Systems of ODEs with SciPy.ipynb — How to simulate ordinary differential equations in python
 * neural-decisions.ipynb — Example of stochastic differential equations used to model neural decisions in python
+* Statistics-and-dimensionality-reduction-gene-expression-example-570.ipynb - Example of dimensionality reduction in gene expression data using PCA
 * swidden_farming_v2.nlogo — Example agent based model for swidden farming in NetLogo
 * swidden_farming_ODD.pdf — Standardized model description for the swidden farming example
 
