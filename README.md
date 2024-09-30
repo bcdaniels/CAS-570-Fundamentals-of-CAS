@@ -11,6 +11,8 @@ Contributors: Enrico Borriello, Bryan Daniels, C. Michael Barton
 * Statistics-and-dimensionality-reduction-gene-expression-example-570.ipynb - Example of dimensionality reduction in gene expression data using PCA
 * swidden_farming_v2.nlogo — Example agent based model for swidden farming in NetLogo
 * swidden_farming_ODD.pdf — Standardized model description for the swidden farming example
+* Basic Python Commands.ipynb — Introductory python commands
+* Difference Equations & Iteration.ipynb — How to model dynamics using difference equations in python
 
 ### Setting up this git repository
 The _simplest_ way to access the code in this repository is to download a zip file containing all its files by clicking 
