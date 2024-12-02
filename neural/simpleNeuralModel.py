@@ -60,7 +60,7 @@ def simpleNeuralDynamics(weightMatrix,inputConst=0,noiseVar=1,
         deltax = deterministicPart + stochasticPart
         
         # update to find the new state
-        newState = currentState + deltax
+        newState = currentState + deltax - 1
         
         # record the new state
         stateList.append(newState)
@@ -71,7 +71,7 @@ def simpleNeuralDynamics(weightMatrix,inputConst=0,noiseVar=1,
     return df
 
 def allToAllNetworkAdjacency(N):
-    return 1 - np.eye(N)
+    return np.eye(N)
 
 def findFixedPoint(weightMatrix,initialGuessState,inputConst=0):
     """
