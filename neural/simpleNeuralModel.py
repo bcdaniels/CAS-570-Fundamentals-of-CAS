@@ -60,7 +60,7 @@ def simpleNeuralDynamics(weightMatrix,inputConst=0,noiseVar=1,
         deltax = deterministicPart + stochasticPart
         
         # update to find the new state
-        newState = currentState + deltax
+        newState = currentState + deltax + 1.
         
         # record the new state
         stateList.append(newState)
